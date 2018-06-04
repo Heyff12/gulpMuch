@@ -1,0 +1,72 @@
+# coding: utf-8
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>提现记录</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="/wallet/v1/static/js/flexible.debug.js"></script>
+    <link href="/wallet/v1/static/css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="/wallet/v1/static/css/mobiscroll.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/wallet/v1/static/css/diff.css">
+</head>
+
+<body class="js_history bg_white">
+    <div id="wap">
+        <header>
+            <a class="title_a fl"></a>
+            <h2>提现记录</h2>
+        </header>
+        <div class="date_month">
+            <label>请选择月:</label>
+            <input type="text" class="text_date" data-role="datebox" name="active_date" id="f_companydate" readonly>
+            <span class="js_date_history">查询</span>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="li_none js_li_none">
+            <img class="history_img" src="/wallet/v1/static/img/wu@3x.png" />
+            <p class="title_no grey">亲，还没有余额提现？快快去体验吧~</p>
+        </div>
+        <section class="section_list js_section_list" style="display: block;">
+            <div id="js_diff_get">
+                <ul class="diff_get js_diff_get">
+                </ul>
+            </div>
+            <p class="click_more grey js_click_more">点击查看更多</p>
+        </section>
+    </div>
+    <div id="loading"></div>
+    <!-- </*弹框*/>  -->
+    <div class="alert_con alert_small" id="alert_error">
+        <div class="alert_con_t">提现失败</div>
+        <div class="alert_con_b">
+            <div class="alert_con_br grey">结算信息有误，请联系客服。</div>
+            <div class="clearfix"></div>
+            <span class="diff_sub mar_t2 js_alert_con_close"><a href="tel:4000-360-280"><i class="ic_tel"></i>4000-360-280</a></span>
+        </div>
+    </div>
+    <!-- </*弹框*/>  -->
+    <div class="alert_con" id="alert_con">
+        <div class="alert_con_t orange">提示<span class="pass_close js_alert_con_close">×</span></div>
+        <div class="alert_con_b">
+            <div class="alert_con_br"></div>
+            <div class="clearfix"></div>
+            <span class="diff_sub mar_t2 js_alert_con_close">确定</span>
+        </div>
+    </div>
+    <div class="zheceng"></div>
+    <script type="text/javascript" src="/wallet/v1/static/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/wallet/v1/static/js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="/wallet/v1/static/js/mobiscroll.js"></script>
+    <!-- <script type="text/javascript" src="/wallet/v1/static/js/iscroll.js"></script>
+<script type="text/javascript" src="/wallet/v1/static/js/pullToRefresh.js"></script> -->
+    <script type="text/javascript" src="/wallet/v1/static/js/diff.js"></script>
+</body>
+
+</html>

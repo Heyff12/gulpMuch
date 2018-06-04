@@ -1,0 +1,81 @@
+# coding: utf-8 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>账户余额</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static_dest/static/new/js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static_dest/static/new/css/diff.css">
+</head>
+
+<body class="bg_white">
+    <div id="wap" class="js_crash_index">
+        <!-- <header style="display: block; padding-top:0.53rem;height: 1.173rem;" >
+            <a class="title_a fl"></a>
+            <h2>账户余额</h2>
+        </header> -->
+        <section class="section_index">
+            <img class="diff_img" src="../../static_dest/static/new/img/ic_my wallet@3x.png" />
+            <p class="title_a">我的账户余额</p>
+            <p class="diff_num">￥<span class="diff_nump js_diff_nump">655839.02</span></p>
+            <!-- 新的修改start -->
+            <!-- <p class="title_a mar_tp">提现时间为工作日<span class="js_time_s"></span>-<span class="js_time_e"></span></p> -->
+            <!-- 新的修改end -->
+            <span class="diff_sub js_diffindex_sub" style="display: none;">
+                  <a href="/wallet/v1/page/withdraw/withdraw.html" class="a_tx_w">提现</a>
+                  <i class="a_tx_w">提现</i>
+                </span>
+            <section class="diff_ing js_diff_ing" style="display: block;">
+                <dl>
+                    <dt class="orange">提现进行中</dt>
+                    <dd>待本次提现到账后，方可进行再次提现</dd>
+                </dl>
+            </section>
+            <p class="title_a">
+                <a href="/wallet/v1/page/withdraw/history.html" class="a_tx">
+                    <img class="diff_imgtx" src="../../static_dest/static/new/img/ic_jilu@3x.png" /> 提现记录 <span class="arrow_right"></span>
+                </a>
+            </p>
+        </section>
+        <footer>
+            <p class="title_b"><a href="#" class="a_tx">常见问题</a></p>
+        </footer>
+    </div>
+    <!-- 新的修改start -->
+    <!-- </*弹框*/>  -->
+    <div class="alert_con" id="time_tips">
+        <div class="alert_con_b">
+            <div class="alert_con_br_time">请于提现服务时间内进行操作
+                <br/>提现时间为
+                <br/><span class="orange">工作日<span class="js_time_s"></span>-<span class="js_time_e"></span></span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="alert_con_footer">
+            <span class="diff_sub  js_alert_con_close">确定</span>
+        </div>
+    </div>
+    <!-- 新的修改end -->
+    <div id="loading"></div>
+    <!-- </*弹框*/>  -->
+    <div class="alert_con" id="tips_alert">
+        <div class="alert_con_t orange">提示<span class="pass_close js_alert_con_close">×</span></div>
+        <div class="alert_con_b">
+            <div class="alert_con_br"></div>
+            <div class="clearfix"></div>
+            <span class="diff_sub mar_t2 js_alert_con_close">确定</span>
+        </div>
+    </div>
+    <div class="zheceng"></div>
+    <div class="zheceng1"></div>
+    <script type="text/javascript" src="../../static_dest/static/new/js/zepto.min.js"></script>
+    <script type="text/javascript" src="../../static_dest/static/new/js/diff.js"></script>
+</body>
+
+</html>

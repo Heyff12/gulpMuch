@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>余额提现</title>
+    <meta charset="utf-8">
+    <!-- <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <script type="text/javascript" src="../../static_dest/static/new/js/zepto.min.js"></script>
+    <script type="text/javascript" src="../../static_dest/static/new/js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="../../static_dest/static/new/css/diff.css">
+</head>
+
+<body>
+    <div id="wap" class="js_diff_index">
+        <header style="display: block; padding-top:0.53rem;height: 1.173rem;" >
+            <a class="title_a fl"></a>
+            <h2>余额提现</h2>
+        </header>
+        <section class="section_diff">
+            <dl class="formbg dl_bank">
+                <dt>到账银行卡</dt>
+                <dd class="orange"><span class="js_bank_name"></span>(<span class="js_bank_foot"></span>)</dd>
+                <div class="clearfix"></div>
+            </dl>
+            <dl class="formbg dl_crash">
+                <dt>提现金额</dt>
+                <dd class="diff_txdd">￥
+                    <input type="text" class="diff_crash js_diff_crash" pattern="\.?[0-9]*" autofocus value=""></input>
+                </dd>
+                <dd class="grey errordd_tip js_dd_grey">总余额￥<span class="js_diff_nump_withdraw"></span>，<span class="orange js_crash_all">全部提现</span></dd>
+                <dd class="red_error errordd_tip js_dd_red_error">输入金额超过账户余额</dd>
+                <dd class="red_error errordd_tip js_dd_redall_emin">账户余额小于单笔最小提现金额</dd>
+                <dd class="red_error errordd_tip js_dd_red_emax">单笔提现金额不能超过<span class="js_price_max"></span>元</dd>
+                <dd class="red_error errordd_tip js_dd_red_emin">单笔提现金额不能小于<span class="js_price_min"></span>元</dd>
+                <dd class="red_error errordd_tip js_dd_redday_emin">超出单日提现累计限额,不能小于<span class="js_priceday_min"></span>元</dd>
+                <dd class="grey errordd_tip grey_tips js_grey_tips">扣除￥<span class="js_fee_str_change"></span>手续费</dd>
+                <!-- <dd class="grey errordd_tip grey_tips js_grey_tips">手续费￥<span class="js_fee_str_change">0.00</span></dd> -->
+            </dl>
+            <!-- <p class="title_c grey">*提现手续费为<span class="js_fee_str"></span>元/笔</p> -->
+            <p class="title_c grey">手续费￥<span class="js_fee_str_change"></span></p>
+            <!-- <p class="title_d grey">预计<span class="js_eta_str"></span>小时之内到账</p> -->
+            <p class="title_d grey">*预计<span class="js_date_str"></span>前到账</p>
+            <input id="auth_code" type="hidden" value="" />
+            <input class="js_priceday_min" type="hidden" value="" />
+            <span class="diff_sub wid_92 diff_sub_disa js_diff_fail_draw">提现</span>
+            <span class="diff_sub wid_92 span_hide js_diff_sub_draw">提现</span>
+        </section>
+    </div>
+    <div id="loading"></div>
+    <!-- </*密码错误弹框   钱方好近账户密码错误*/>  -->
+    <div class="alert_con alert_pass" id="passerror_alert">
+        <div class="alert_con_t"></div>
+        <ul class="both_button">
+            <li class="both_button_right js_both_button_right orange">重试</li>
+            <li class="both_button_fail js_both_button_fail">取消</li>
+        </ul>
+    </div>
+    <!-- </*密码框*/>  -->
+    <div class="alert_con" id="pass_input" style="display:block;">
+        <div class="alert_con_t">输入密码 <span class="pass_close orange js_alert_con_close1">×</span></div>
+        <div class="alert_con_b">
+            <p class="title_a">提现</p>
+            <p class="title_g">￥<span class="alert_crash js_diff_alert_crash">1.00</span></p>
+            <!-- <p class="title_h grey">含手续费￥<span class="js_fee_str_end"></span></p> -->
+            <input class="alert_crashpass js_alert_crashpass" type="password" placeholder="请输入钱方好近账户密码" />
+            <div class="clearfix"></div>
+            <span class="diff_sub mar_t2 js_draw_pass">确定</span>
+        </div>
+    </div>
+    <!-- </*弹框*/>  -->
+    <div class="alert_con" id="tips_alert">
+        <div class="alert_con_t orange">提示 <span class="pass_close js_alert_con_close">×</span></div>
+        <div class="alert_con_b">
+            <div class="alert_con_br"></div>
+            <div class="clearfix"></div>
+            <span class="diff_sub mar_t2 js_alert_con_close">确定</span>
+        </div>
+    </div>
+    <div class="zheceng" style="display:block;"></div>
+    <div class="zheceng1"></div>
+    <script type="text/javascript" src="../../static_dest/static/new/js/diff.js"></script>
+</body>
+
+</html>

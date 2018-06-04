@@ -1,0 +1,826 @@
+@import "./common/common";
+
+/* ==================账户余额详情页============================================================ */
+
+section.section_index {
+    width: 100%;
+    padding: 0 @padding;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+img.diff_img {
+    display: block;
+    width: 26%;
+    margin: 2rem auto 0.8rem;
+    height: auto;
+}
+
+p.title_a {
+    font-size: @font_size;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+
+/*---------------------------------------------------------新的修改start----------*/
+
+.mar_tp {
+    margin-top: 1.2rem;
+}
+
+p.diff_num {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8rem;
+    color: #2a2c33;
+    font-family: Helvetica;
+    margin-bottom: 1.6rem;
+}
+
+span.diff_sub {
+    display: inline-block;
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    background: @orange;
+    color: white;
+    border-radius: @border_radius;
+    font-size: 17px;
+    margin: 0.1rem 0 0.5rem;
+}
+
+span.diff_sub.disa {
+    background: #9d9fa5;
+}
+
+
+/*--------------------------------------------------------- 新的修改end*/
+
+img.diff_imgtx {
+    width: 0.36rem;
+    height: auto;
+    padding-right: 0.1rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+span.arrow_right {
+    padding-left: 0.1rem;
+    font-size: 0.5rem;
+    position: relative;
+    top: 0.05rem;
+    display: inline-block;
+    width: 0.36rem;
+    height: 0.36rem;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsKQGZvbnQtZmFjZSB7IGZvbnQtZmFtaWx5OiBpZm9udDsgc3JjOiB1cmwoaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS5lb3Q/I2llZml4KSBmb3JtYXQoZW1iZWRkZWQtb3BlbnR5cGUpLCB1cmwoaHR0cDovL2F0LmFsaWNkbi5jb20vdC9mb250XzE0NDIzNzM4OTZfNDc1NDQ1NS53b2ZmKSBmb3JtYXQod29mZiksIHVybChodHRwOi8vYXQuYWxpY2RuLmNvbS90L2ZvbnRfMTQ0MjM3Mzg5Nl80NzU0NDU1LnR0ZikgZm9ybWF0KHRydWV0eXBlKSwgdXJsKGh0dHA6Ly9hdC5hbGljZG4uY29tL3QvZm9udF8xNDQyMzczODk2XzQ3NTQ0NTUuc3ZnI2lmb250KSBmb3JtYXQoc3ZnKTsgfQoKXV0+PC9zdHlsZT48L2RlZnM+PGcgY2xhc3M9InRyYW5zZm9ybS1ncm91cCI+PGcgdHJhbnNmb3JtPSJzY2FsZSgwLjE5NTMxMjUsIDAuMTk1MzEyNSkiPjxwYXRoIGQ9Ik03NjcuOTA0IDUxMmwtNDYuNTI4IDUxLjIgMCAwLTQxOC43NDU2IDQ2MC44LTQ2LjUyOC01MS4yIDQxOC43NDU2LTQ2MC44TDI1Ni4wOTYgNTEuMmw0Ni41MjgtNTEuMiA0MTguNzQ1NiA0NjAuOCAwIDBMNzY3LjkwNCA1MTJ6IiBmaWxsPSIjMmYzMjNhIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=");
+    background-position: 50%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a.a_tx {
+    display: inline-block;
+    width: 100%;
+    color: #2f323a;
+}
+
+a.a_tx_w {
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+
+span.diff_sub a:link,
+span.diff_sub a:visited,
+span.diff_sub a:hover {
+    color: white;
+}
+
+a.a_tx:link,
+a.a_tx:visited,
+a.a_tx:hover {
+    color: #2f323a;
+}
+
+span.diff_sub a {
+    display: inline-block;
+}
+
+span.diff_sub i {
+    display: none;
+    font-style: normal;
+}
+
+span.diff_sub.diff_sub0 {
+    background: #9d9fa5;
+}
+
+span.diff_sub.diff_sub0 a {
+    display: none;
+}
+
+span.diff_sub.diff_sub0 i {
+    display: inline-block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 10rem;
+    padding-bottom: 0.6rem;
+}
+
+p.title_b {
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.8rem;
+    display: none;
+}
+
+section.diff_ing {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: @font_size;
+    border-radius: @border_radius;
+    margin: 0.1rem 0 25px;
+}
+
+section.diff_ing dl {
+    width: 100%;
+    border: @border_width solid @orange;
+    border-radius: @border_radius;
+    background: white;
+    padding: 0.3rem @padding .4rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section.diff_ing dl dt {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1rem;
+    position: relative;
+}
+
+section.diff_ing dl dt:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 34%;
+    background: #d8d8d8;
+    left: 0;
+    top: .48rem;
+}
+
+section.diff_ing dl dt:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 34%;
+    background: #d8d8d8;
+    right: 0;
+    top: .48rem;
+}
+
+section.diff_ing dl dd {
+    line-height: .6rem;
+    text-align: center;
+}
+
+
+/* ==================提现记录列表页============================================================ */
+
+.ui-overlay-a,
+.ui-page-theme-a {
+    background: @background_color;
+    background-color: @background_color;
+}
+
+body.bg_white {
+    background: white;
+}
+
+body.bg_white.ui-overlay-a,
+body.bg_white .ui-page-theme-a {
+    background: white;
+    background-color: white;
+}
+
+section.section_list {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 @padding;
+    margin: 0 auto;
+    display: none;
+}
+
+ul.diff_get li {
+    font-size: @font_size;
+    line-height: 0.6rem;
+}
+
+ul.diff_get li dl {
+    border-bottom: @border_width solid @border_color;
+    padding: 0.2rem @padding .2rem 0;
+    box-sizing: border-box;
+}
+
+ul.diff_get li dl dt {
+    float: right;
+    width: 50%;
+    text-align: right;
+    line-height: 1.2rem;
+    font-size: 16px;
+}
+
+ul.diff_get li dl dd {
+    float: left;
+    width: 50%;
+}
+
+ul.diff_get li dl dd.grey {
+    font-size: 0.34rem;
+}
+
+ul.diff_get li.grey dl dt {
+    float: right;
+    width: 50%;
+    text-align: right;
+    line-height: 0.6rem;
+}
+
+ul.diff_get li.grey dl dt span.red {
+    font-size: 0.34rem;
+}
+
+ul.diff_get li.other dl dt {
+    float: right;
+    width: 50%;
+    text-align: right;
+    line-height: 0.6rem;
+}
+
+ul.diff_get li.other dl dt span.grey {
+    font-size: 0.34rem;
+    color: #fe9b20;
+}
+
+ul.diff_get li.success dl dt {
+    float: right;
+    width: 50%;
+    text-align: right;
+    line-height: 0.6rem;
+}
+
+ul.diff_get li.success dl dt span.normal {
+    font-size: 0.34rem;
+    color: #74C704;
+}
+
+p.click_more {
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: @font_size;
+}
+
+i.ic_err {
+    display: inline-block;
+    width: .36rem;
+    height: .36rem;
+    background: url('../img/ic_error.png') top left no-repeat;
+    background-size: .36rem auto;
+    position: relative;
+    top: .06rem;
+    margin-right: 3px;
+}
+
+i.ic_tel {
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    background: url('../img/ic_tel.png') top left no-repeat;
+    background-size: .4rem auto;
+    position: relative;
+    top: .08rem;
+    margin-right: 3px;
+}
+
+.alert_con.alert_small .alert_con_t {
+    border: 0;
+}
+.alert_con.alert_small span.diff_sub a{
+    width: 100%;
+}
+.alert_con.alert_small .alert_con_br {
+    font-size: .4rem;
+}
+
+span.diff_sub i.ic_tel {
+    display: inline-block;
+}
+
+
+/* ==================提现记录列表页为空=============== */
+
+.li_none {
+    background: @background_color;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.history_img {
+    display: inline-block;
+    width: 48%;
+    margin: 3rem 0 1.2rem 26%;
+    height: auto;
+}
+
+p.title_no {
+    font-size: @font_size;
+    text-align: center;
+    line-height: 0.8rem;
+    width: 68%;
+    margin: 0 auto;
+}
+
+input.text_date {
+    width: 42%;
+    display: inline-block;
+    float: left;
+    margin-top: 0.07rem;
+    border: @border_width solid @border_color;
+    border-radius: @border_radius;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    min-height: 0.8rem;
+    padding: 0 0.2rem;
+    font-size: @font_size;
+    text-align: center;
+}
+
+
+/* ==================提现操作页============================================================ */
+
+section.section_diff {
+    width: 100%;
+    margin: 0 auto;
+}
+
+dl.formbg {
+    background: white;
+    border-top: @border_width solid @border_color;
+    border-bottom: @border_width solid @border_color;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3rem @padding;
+    margin: 10px auto 0;
+    font-size: @font_size;
+    line-height: 0.6rem;
+    &:nth-child(1){
+        margin-top: 15px;
+    }
+}
+
+dl.dl_bank {
+    line-height: 1rem;
+}
+
+dl.dl_bank dt {
+    float: left;
+    width: 30%;
+}
+
+dl.dl_bank dd {
+    float: left;
+    width: 70%;
+}
+
+dl.dl_crash {
+    line-height: 0.6rem;
+}
+
+dl.dl_crash dd.diff_txdd {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    border-bottom: @border_width solid @border_color;
+}
+
+input.diff_crash {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+    position: relative;
+    top: 0;
+    left: 0.2rem;
+    width: 80%;
+    border: none;
+    background: none;
+}
+
+dl.dl_crash dd.grey {
+    margin-top: 0.3rem;
+}
+
+dl.dl_crash dd.red_error {
+    margin-top: 0.3rem;
+    display: none;
+    color: #db2f22;
+}
+
+dl.dl_crash dd.grey_tips {
+    display: none;
+}
+
+p.title_c {
+    width: 92%;
+    margin: 0 0 0 4%;
+    font-size: 0.34rem;
+    text-align: left;
+    line-height: 0.8rem;
+}
+
+p.title_d {
+    width: 92%;
+    margin: 0.2rem 0 0 4%;
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+span.diff_sub.wid_92 {
+    width: 92%;
+    margin: 0.2rem 0 0 4%;
+}
+
+span.diff_sub.diff_sub_disa {
+    background: #9d9fa5;
+}
+
+span.diff_sub.wid_92.span_hide {
+    display: none;
+}
+
+
+/* ==================提现结果============================================================ */
+
+section.section_detail {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img.diff_img_s {
+    display: inline-block;
+    width: 16%;
+    margin: 1rem 0 @padding 42%;
+    height: auto;
+}
+
+p.title_e {
+    width: 100%;
+    margin: 0.2rem 0 0 0%;
+    font-size: 17px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+p.title_f {
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.6rem;
+}
+
+dl.formbg.dl_detail {
+    padding: 0.2rem 0 .2rem @padding;
+}
+
+dl.dl_detail {
+    line-height: 1.2rem;
+    box-sizing: border-box;
+}
+
+dl.dl_detail dt {
+    float: left;
+    width: 30%;
+}
+
+dl.dl_detail dd {
+    float: left;
+    width: 70%;
+    text-align: right;
+    font-size: 16px;
+    padding-right: @padding;
+    box-sizing: border-box;
+}
+
+span.diff_sub.mar_t2 {
+    margin: 0.2rem 0 0.2rem;
+}
+
+span.diff_sub.wid_92t {
+    width: 92%;
+    margin: 0.6rem 0 0 4%;
+}
+
+
+/* ==================提现详情页============================================================ */
+
+dl.formbg.dl_detail.dl_d_new.line_s {
+    line-height: .8rem;
+}
+
+dl.formbg.dl_detail.dl_d_new dt {
+    width: 22%;
+}
+
+dl.formbg.dl_detail.dl_d_new dd {
+    width: 78%;
+    float: right;
+    overflow: hidden;
+    text-align: left;
+}
+
+dl.formbg.dl_detail.dl_d_new dd span.money {
+    font-size: .5rem;
+}
+
+
+/*密码框-----------------------------------------------*/
+
+.pass_close {}
+
+.alert_con_t span {
+    position: absolute;
+    right: @padding;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.6rem;
+}
+
+p.title_g {
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-family: Helvetica;
+}
+
+p.title_g span {
+    font-size: 1rem;
+}
+
+p.title_h {
+    width: 100%;
+    margin: 0rem 0 0 0%;
+    font-size: 0.34rem;
+    text-align: center;
+    line-height: 0.5rem;
+}
+
+input.alert_crashpass {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 2%;
+    font-size: @font_size;
+    background: none;
+    border: @border_width solid @border_color;
+    border-radius: @border_radius;
+    margin: @padding 0 0.2rem;
+}
+
+.alert_con_footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-top: @border_width solid @border_color;
+}
+
+.alert_con_footer span.diff_sub {
+    margin: 0;
+}
+
+
+/*加载loading---------*/
+
+.pullDown,
+.pullUp {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #888;
+    font-family: Arial, Microsoft YaHei;
+}
+
+// .pullDown{ display:none;}
+.pullUp {
+    display: block;
+}
+
+.loader {
+    display: inline-block;
+    font-size: 0px;
+    padding: 0px;
+    display: none;
+}
+
+.loader span {
+    vertical-align: middle;
+    border-radius: 100%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    -webkit-animation: loader 0.8s linear infinite alternate;
+    animation: loader 0.8s linear infinite alternate;
+}
+
+.loader span:nth-child(1) {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    background: rgba(245, 103, 115, 0.6);
+}
+
+.loader span:nth-child(2) {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+    background: rgba(245, 103, 115, 0.8);
+}
+
+.loader span:nth-child(3) {
+    -webkit-animation-delay: -0.26666s;
+    animation-delay: -0.26666s;
+    background: rgba(245, 103, 115, 1);
+}
+
+.loader span:nth-child(4) {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+    background: rgba(245, 103, 115, 0.8);
+}
+
+.loader span:nth-child(5) {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    background: rgba(245, 103, 115, 0.4);
+}
+
+@keyframes loader {
+    from {
+        transform: scale(0, 0);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@-webkit-keyframes loader {
+    from {
+        -webkit-transform: scale(0, 0);
+    }
+    to {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+
+/*日历*/
+
+.date_month {
+    width: 100%;
+    border-bottom: @border_width solid @border_color;
+    max-width: 10rem;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    padding: 0.2rem @padding;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.date_month label {
+    width: 25%;
+    display: inline-block;
+    margin: 0;
+    float: left;
+    font-size: @font_size;
+}
+
+.date_month span {
+    width: 23%;
+    display: inline-block;
+    margin: 0;
+    float: right;
+    text-align: center;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    background: @orange;
+    border-radius: @border_radius;
+    font-size: @font_size;
+    color: white;
+    margin-top: 0.1rem;
+    text-shadow: 0 0 0;
+}
+
+.ui-input-text {
+    margin: 0;
+    width: 46%;
+    display: inline-block;
+    float: left;
+    margin-top: 0.07rem;
+}
+
+.ui-input-text input {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    min-height: 0.8rem;
+    padding: 0 0.2rem;
+    font-size: @font_size;
+    text-align: center;
+}
+
+.dwrc table tr td:nth-child(3) {
+    display: none;
+}
+
+.ui-page-theme-a {
+    text-shdow: 0 0 0;
+}
+
+.ui-shadow-inset {
+    box-shadow: 0 0 0;
+}
+
+.ui-body-c {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    text-shadow: 0 1px 0 #fff;
+    background: #f9f9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eee));
+    background-image: -webkit-linear-gradient(#f9f9f9, #eee);
+    background-image: -moz-linear-gradient(#f9f9f9, #eee);
+    background-image: -ms-linear-gradient(#f9f9f9, #eee);
+    background-image: -o-linear-gradient(#f9f9f9, #eee);
+    background-image: linear-gradient(#f9f9f9, #eee);
+}
+
+.ui-bar-b {
+    background: #5e87b0;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #3e6790;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6facd5), to(#497bae));
+    background-image: -webkit-linear-gradient(#6facd5, #497bae);
+    background-image: -moz-linear-gradient(#6facd5, #497bae);
+    background-image: -ms-linear-gradient(#6facd5, #497bae);
+    background-image: -o-linear-gradient(#6facd5, #497bae);
+    background-image: linear-gradient(#6facd5, #497bae);
+}
+
+.ui-body-d {
+    border: @border_width solid @border_color;
+    color: #333;
+    text-shadow: 0 1px 0 #fff;
+    background: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    background-image: -moz-linear-gradient(#fff, #fff);
+    background-image: -ms-linear-gradient(#fff, #fff);
+    background-image: -o-linear-gradient(#fff, #fff);
+    background-image: linear-gradient(#fff, #fff);
+}
+
+.dwwb {
+    border-bottom: 1px solid #fff;
+    background: white;
+    border-color: rgba(255, 255, 255, .3);
+}
+
+.dwbc-p .dwbw .dwb {
+    background: @background_color;
+    border-radius: @border_radius;
+    border: @border_width solid @border_color;
+    width: 80%;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.dwbc-p .dwbw .dwb.dwb-a {
+    background: #5e87b0;
+    color: white;
+}
